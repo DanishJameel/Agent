@@ -3,7 +3,7 @@ import streamlit as st
 st.set_page_config(page_title="Sample Agent Bot Voice", layout="centered")
 
 st.markdown("# Tax Pro Agent")
-st.markdown("### Powered by Eleven Labs")
+st.markdown("### Powered by Eleven NMS")
 
 # User selection for AI Agent (Male or Female)
 agent_choice = st.radio("Choose Your Agent:", ("Male Agent", "Female Agent"))
