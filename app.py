@@ -9,8 +9,8 @@ st.markdown("### Powered by  NMS")
 agent_choice = st.radio("Choose Your Agent:", ("Male Agent", "Female Agent"))
 
 # Define agent IDs
-male_agent_id = "4HHypNdTplYHuGM3A1Ky"  # Male Agent ID
-female_agent_id = "SLjqAdjbda6LpRyBbDd3"  # Female Agent ID
+male_agent_id = "wqwu6RS8mBYeCutSCqFW"  # Male Agent ID
+female_agent_id = "npr5Ye8C8pwYJKDQRQDP"  # Female Agent ID
 
 # Select the appropriate agent ID based on user choice
 selected_agent_id = male_agent_id if agent_choice == "Male Agent" else female_agent_id
