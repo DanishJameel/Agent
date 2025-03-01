@@ -15,10 +15,10 @@ female_agent_id = "npr5Ye8C8pwYJKDQRQDP"  # Female Agent ID
 # Select the appropriate agent ID based on user choice
 selected_agent_id = male_agent_id if agent_choice == "Male Agent" else female_agent_id
 
-# Embed the ElevenLabs ConvAI widget using an iframe
-iframe_code = f"""
-    <iframe src="https://elevenlabs.io/convai-widget/index.html?agent-id={selected_agent_id}" 
-    width="100%" height="500" style="border:none;"></iframe>
+# Embed the ElevenLabs ConvAI widget using JavaScript
+custom_script = f"""
+    <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
+    <elevenlabs-convai agent-id="{selected_agent_id}" style="width:100%; height:500px; display:block;"></elevenlabs-convai>
 """
 
-st.components.v1.html(iframe_code, height=500)
+st.components.v1.html(custom_script, height=500)
